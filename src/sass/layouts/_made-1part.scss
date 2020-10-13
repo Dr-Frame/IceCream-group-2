@@ -1,0 +1,89 @@
+.container {
+
+    outline: tomato;
+}
+
+
+.page-made {
+
+    background-color: #FFF5F6;
+
+    &__subtitle {
+
+      padding-top: 125px; 
+      font-family: Titan One;
+      font-size: 18px;
+      line-height: 1.16;
+      color: #FFA5BA;
+     
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    &__title {
+
+       margin-top: 15px;
+       font-family: Titan One;
+       font-style: normal;
+       font-weight: normal;
+       font-size: 34px;
+       line-height: 1.14;
+       text-align: center;
+       letter-spacing: 0.04em;
+       text-transform: uppercase;
+       
+       color: #D41443;
+    }
+}
+
+.description {
+
+    &__img {
+
+        margin-top: 26px;
+        outline: 1px solid tomato;
+    }
+
+    &__title {
+
+        margin-top: 46px;
+        font-family: DM Sans;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.58;
+        text-align: center;
+        color: #000000; 
+    }
+
+    &__text {
+
+        margin-top: 47px;
+        font-family: DM Sans;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.58;
+    
+        color: #907E82;
+    }
+
+    &__btn {
+        
+        text-align: center;
+        margin-top: 47px;
+        margin-bottom: 39px;
+
+    }
+
+    &__link {
+
+        display: block;
+        padding-left: 37px;
+        padding-right: 56px;
+        text-decoration: none;
+        color: #D41443;
+
+    }
+
+}

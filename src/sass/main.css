@@ -471,4 +471,75 @@ address {
 .btn--red:hover {
   background-color: #c7133e;
 }
+
+.container {
+  outline: tomato;
+}
+
+.page-made {
+  background-color: #FFF5F6;
+}
+
+.page-made__subtitle {
+  padding-top: 125px;
+  font-family: Titan One;
+  font-size: 18px;
+  line-height: 1.16;
+  color: #FFA5BA;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.page-made__title {
+  margin-top: 15px;
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 34px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #D41443;
+}
+
+.description__img {
+  margin-top: 26px;
+  outline: 1px solid tomato;
+}
+
+.description__title {
+  margin-top: 46px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.58;
+  text-align: center;
+  color: #000000;
+}
+
+.description__text {
+  margin-top: 47px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.58;
+  color: #907E82;
+}
+
+.description__btn {
+  text-align: center;
+  margin-top: 47px;
+  margin-bottom: 39px;
+}
+
+.description__link {
+  display: block;
+  padding-left: 37px;
+  padding-right: 56px;
+  text-decoration: none;
+  color: #D41443;
+}
 /*# sourceMappingURL=main.css.map */
