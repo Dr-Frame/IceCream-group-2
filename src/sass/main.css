@@ -474,6 +474,8 @@ address {
 
 .page-made {
   background-color: #FFF5F6;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .page-made__subtitle {
@@ -543,15 +545,18 @@ address {
   color: #D41443;
 }
 
-.milk-bgc {
-  outline: 1px solid tomato;
-  background-image: url("../../images/piecemilk.png");
-  display: block;
-}
-
 .svg-btn__arrow {
   width: 10px;
   height: 10px;
   margin-right: 38px;
+}
+
+.milk-bgc {
+  position: absolute;
+  background-image: url("../images/piecemilk.png");
+  background-size: cover;
+  height: 130px;
+  bottom: -375px;
+  width: 100%;
 }
 /*# sourceMappingURL=main.css.map */
