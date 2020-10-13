@@ -104,12 +104,18 @@
 
 .milk-bgc {
 
+
     position: absolute;
     background-image: url("../images/piecemilk.png");
     background-size: cover;
-    height: 130px;
+    height: 108px;
     bottom: -375px;
     width: 100%;
-   
+
+    @media screen and (min-width: 767px) {
+
+        display: none;
+    }
+    
     
 }

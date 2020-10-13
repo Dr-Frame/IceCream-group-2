@@ -555,8 +555,20 @@ address {
   position: absolute;
   background-image: url("../images/piecemilk.png");
   background-size: cover;
-  height: 130px;
+  height: 108px;
   bottom: -375px;
   width: 100%;
+}
+
+@media screen and (min-width: 767px) {
+  .milk-bgc {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .milk-bgc {
+    display: block;
+  }
 }
 /*# sourceMappingURL=main.css.map */
