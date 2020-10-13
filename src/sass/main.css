@@ -471,4 +471,12 @@ address {
 .btn--red:hover {
   background-color: #c7133e;
 }
+
+body {
+  background-color: #1caf0f;
+}
+
+.page-made {
+  background-color: #ccc;
+}
 /*# sourceMappingURL=main.css.map */
