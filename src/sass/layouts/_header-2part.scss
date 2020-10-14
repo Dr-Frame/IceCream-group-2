@@ -1,0 +1,70 @@
+.header-section {
+  background-color: $bg-header;
+  padding-top: 6px;
+  padding-bottom: 160px;
+
+  @include for-size(tablet) {
+    padding-top: 37px;
+    padding-bottom: 34px;
+  }
+
+  @include for-size(desktop) {
+    padding-bottom: 56px;
+  }
+}
+
+.hero__title-box {
+  width: 218px;
+}
+
+.hero__title {
+  margin-bottom: 19px;
+
+  font-family: Titan One, Open Sans;
+  @include font(48px, 0.97, 500);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.hero__title-decoration {
+  font-size: 26px;
+  line-height: 1.15;
+  color: $main-color;
+}
+
+.hero__btn-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.hero__btn-item {
+  &:nth-child(1) {
+    margin-right: 8px;
+  }
+}
+
+.hero__btn-link {
+  height: 24px;
+  padding-top: 0;
+  padding-bottom: 0;
+
+  @include font(8px, 1.25, 500);
+
+  &:nth-child(1) {
+    width: 62px;
+  }
+
+  &:nth-child(2) {
+    width: 83px;
+  }
+}
+
+.hero__stat-list {
+  display: none;
+}
+
+.promo-text-box {
+  display: none;
+}
