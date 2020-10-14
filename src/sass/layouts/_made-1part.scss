@@ -3,8 +3,8 @@
 .page-made {
   
     background-color: #FFF5F6;
-    margin-left: auto;
-    margin-right: auto;
+    // margin-left: auto;
+    // margin-right: auto;
 
     &__subtitle {
 
@@ -36,7 +36,8 @@
 
 .description {
 
-   
+   position: relative;
+   outline: 1px solid tomato;
 
     &__img {
 
@@ -108,9 +109,9 @@
     position: absolute;
     background-image: url("../images/piecemilk.png");
     background-size: cover;
-    height: 108px;
-    bottom: -375px;
+    height: 100px;
     width: 100%;
+    outline: 1px solid tomato;
 
     @media screen and (min-width: 767px) {
 
