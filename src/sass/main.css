@@ -473,6 +473,7 @@ address {
 }
 
 .page-made {
+  position: relative;
   background-color: #FFF5F6;
 }
 
@@ -497,11 +498,6 @@ address {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #D41443;
-}
-
-.description {
-  position: relative;
-  outline: 1px solid tomato;
 }
 
 .description__img {
@@ -556,16 +552,22 @@ address {
 
 .milk-bgc {
   position: absolute;
+  top: 790px;
   background-image: url("../images/piecemilk.png");
   background-size: cover;
-  height: 100px;
+  height: 130px;
   width: 100%;
-  outline: 1px solid tomato;
 }
 
 @media screen and (min-width: 767px) {
   .milk-bgc {
     display: none;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .milk-bgc {
+    background-image: url("../images/piecemilk@2x.png");
   }
 }
 /*# sourceMappingURL=main.css.map */

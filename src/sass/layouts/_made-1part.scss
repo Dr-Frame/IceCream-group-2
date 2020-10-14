@@ -1,10 +1,10 @@
 
 
 .page-made {
-  
+    
+    position: relative;
     background-color: #FFF5F6;
-    // margin-left: auto;
-    // margin-right: auto;
+   
 
     &__subtitle {
 
@@ -36,9 +36,7 @@
 
 .description {
 
-   position: relative;
-   outline: 1px solid tomato;
-
+ 
     &__img {
 
         margin-top: 26px;
@@ -107,11 +105,12 @@
 
 
     position: absolute;
+    top: 790px;
     background-image: url("../images/piecemilk.png");
     background-size: cover;
-    height: 100px;
+    height: 130px;
     width: 100%;
-    outline: 1px solid tomato;
+   
 
     @media screen and (min-width: 767px) {
 
@@ -120,3 +119,14 @@
     
     
 }
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (-webkit-min-device-pixel-ratio: 2),
+  screen and (-o-min-device-pixel-ratio: 2/1),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx)  {
+    .milk-bgc {
+        background-image: url("../images/piecemilk@2x.png"); 
+    }
+  }
+
