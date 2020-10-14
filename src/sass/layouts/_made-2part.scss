@@ -19,6 +19,9 @@
   @include for-size(tablet) {
     margin-right: 60px;
   }
+  @include for-size(desktop) {
+    margin-right: 30px;
+  }
 }
 .made-item:nth-child(1)::before {
   content: '';
@@ -32,6 +35,9 @@
   @include for-size(tablet) {
     margin-bottom: 36px;
   }
+  @include for-size(desktop) {
+    margin-bottom: 40px;
+  }
 }
 .made-item:nth-child(2)::before {
   content: '';
@@ -44,6 +50,9 @@
   @include for-size(tablet) {
     margin-bottom: 36px;
   }
+  @include for-size(desktop) {
+    margin-bottom: 40px;
+  }
 }
 .made-item:nth-child(3)::before {
   content: '';
@@ -52,8 +61,12 @@
   height: 50px;
   background-image: url(../images/made-icecream03.png);
   margin-bottom: 16px;
+
   @include for-size(tablet) {
     margin-bottom: 36px;
+  }
+  @include for-size(desktop) {
+    margin-bottom: 40px;
   }
 }
 .made-heading {
@@ -75,6 +88,11 @@
     line-height: 55px;
     margin-bottom: 13px;
   }
+  @include for-size(desktop) {
+    font-size: 58px;
+    line-height: 66px;
+    margin-bottom: 15px;
+  }
 }
 .made-text {
   display: block;
@@ -94,6 +112,13 @@
     font-size: 14px;
     line-height: 174%;
   }
+  @include for-size(desktop) {
+    width: 330px;
+    height: auto;
+    font-size: 16px;
+    line-height: 176%;
+    letter-spacing: 0.02em;
+  }
 }
 .img-collage {
   @include for-size(mobile-only) {
@@ -102,7 +127,7 @@
   @include for-size(tablet) {
     margin-bottom: -158px;
   }
-}
-
-@include for-size(tablet) {
+  @include for-size(desktop) {
+    margin-bottom: -259px;
+  }
 }
