@@ -1,3 +1,8 @@
+.container {
+  @include for-size(desktop) {
+    width: 1280px;
+  }
+}
 .header {
   width: 100px;
   height: 50px;
@@ -52,12 +57,15 @@
 
     background-image: url(../images/icecream-bg-tab1x.png),
       url(../images/sotasty-bg-tab1x.png),
-      url(../images/jug-of-milk-bg-tab1x.png),
-      url(../images/ellipse-bg-tab1x.png);
-    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+      url(../images/jug-of-milk-bg-tab1x.png), url(../images/ellipse-bg.svg),
+      url(../images/ellipse-bg.svg), url(../images/ellipse-bg-tab1x.png);
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
+      no-repeat;
     background-position: right 247px bottom, right 34px bottom,
-      left 34px bottom 28px, right 137px bottom 46px;
-    background-size: 143px 366px, 168px 133px, 124px 126px, 324px 322px;
+      left 34px bottom 28px, right 34px top 94px, right 34px top 151px,
+      right 137px bottom 46px;
+    background-size: 143px 366px, 168px 133px, 124px 126px, 16px 16px, 16px 16px,
+      324px 322px;
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
@@ -84,12 +92,15 @@
 
     background-image: url(../images/icecream-bg-desk1x.png),
       url(../images/sotasty-bg-desk1x.png),
-      url(../images/jug-of-milk-bg-desk1x.png),
-      url(../images/ellipse-bg-desk1x.png);
-    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+      url(../images/jug-of-milk-bg-desk1x.png), url(../images/ellipse-bg.svg),
+      url(../images/ellipse-bg.svg) url(../images/ellipse-bg-desk1x.png);
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
+      no-repeat;
     background-position: right 450px bottom, right 109px bottom,
-      left 77px bottom 45px, right 267px bottom 75px;
-    background-size: 236px 557px, 293px 232px, 188px 191px, 538px 538px;
+      left 77px bottom 45px, right 97px top 156px, right 97px top 248px,
+      right 267px bottom 75px;
+    background-size: 236px 557px, 293px 232px, 188px 191px, 30px 30px, 30px 30px,
+      538px 538px;
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
@@ -229,6 +240,10 @@
     flex-direction: column;
     margin-right: 10px;
   }
+
+  @include for-size(desktop) {
+    margin-right: 0px;
+  }
 }
 
 .hero__stat-item {
@@ -254,8 +269,6 @@
   color: $secondary-color;
   text-align: right;
 
-  z-index: 2;
-
   @include for-size(desktop) {
     font-size: 46px;
     line-height: 1.15;
@@ -271,12 +284,6 @@
     font-size: 14px;
     line-height: 1.29;
   }
-}
-
-.hero__stat-icon {
-  position: absolute;
-  top: -2px;
-  right: -10px;
 }
 
 .promo-text-box {
