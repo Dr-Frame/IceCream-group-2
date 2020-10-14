@@ -473,6 +473,7 @@ address {
 }
 
 .page-made {
+  outline: 5px solid blue;
   position: relative;
   background-color: #FFF5F6;
 }
@@ -553,6 +554,7 @@ address {
 .milk-bgc {
   position: absolute;
   top: 790px;
+  left: 0;
   background-image: url("../images/piecemilk.png");
   background-size: cover;
   height: 130px;
