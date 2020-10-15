@@ -554,12 +554,6 @@ address {
   width: 100%;
 }
 
-@media screen and (min-width: 767px) {
-  .milk-bgc {
-    display: none;
-  }
-}
-
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .milk-bgc {
     background-image: url("../images/piecemilk@2x.png");
