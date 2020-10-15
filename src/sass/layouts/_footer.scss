@@ -6,19 +6,22 @@
 ul { 
   list-style: none; 
 }
-
-h6 {
-    color: $light-color;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 21px;
-    text-transform: uppercase;
-    padding-left: 22px;
-    padding-right: 66px;
-    padding-bottom: 17px;
+.page-footer__text {
+  display: inline-block;
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: $light-color;
+  padding-right: 66px;
 }
-h5 {
+.page-footer__text-title {
+  padding-right: 100px;
+}
+h2 {
+    font-family: Titan One;
     color: $secondary-color;
     font-style: normal;
     font-weight: normal;
@@ -26,12 +29,11 @@ h5 {
     line-height: 39px;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    padding-left: 20px;
+    margin-top: 17px;
 }
 
 .container {
     width: 100%;
-    padding-left: 22px;;
     margin-left: auto;
     margin-right: auto;
     }
@@ -43,9 +45,14 @@ h5 {
   }
   .item {
     display: inline-flex;
+    
     justify-content: flex-end;
     align-items: center;
     padding-bottom: 46px;
+  }
+  .social-list {
+    display: flex;
+    justify-content: flex-end;
   }
 
   .social__link--bg {
@@ -54,14 +61,20 @@ h5 {
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    &:hover,
+  	&:focus {
+    background-color: $btn-accent-red;
+    transition: $smoothly;
+	}
   }
-  .contacts {
+  .contacts{
     font-family: DM Sans;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
     line-height: 186%;
     text-align: right;
+    border-bottom-width: 1px solid #E1E1E1;
   }
   .contacts-telephone {
       color:#c7133e ;
