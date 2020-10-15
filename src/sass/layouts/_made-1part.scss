@@ -17,6 +17,15 @@
      
       text-align: center;
       text-transform: uppercase;
+
+      @include for-size(tablet) {
+
+          padding-top: 130px; 
+          font-size: 26px;
+          line-height: 1.15    
+
+    }
+ 
     }
 
     &__title {
@@ -30,19 +39,38 @@
        text-transform: uppercase;
        
        color: $secondary-color;
+
+       @include for-size(tablet) {
+
+        margin-bottom: 50px;
+        font-family: Titan One;
+        font-size: 48px;
+        line-height: 1.14;
+
+       }
     }
 }
 
 .description {
 
     @include for-size(tablet) {
+
+       
         display: flex;
+       
+     
     }
  
     &__img {
 
         margin-top: 26px;
-        
+
+          @include for-size(tablet) {
+              width: 100%;
+              max-width: 340px;
+              max-height: 340px;
+              margin: 0;
+          }
     }
 
     &__title {
@@ -55,6 +83,19 @@
         line-height: 1.58;
         text-align: initial;
         color: #000000; 
+
+    
+        @include for-size(tablet) {
+            
+
+            margin-left: 18px;
+            margin-right: 0;
+            font-size: 14px;
+            line-height: 1.76;
+            margin-top: 60px;
+          
+            
+        }
     }
 
     &__text {
@@ -68,6 +109,14 @@
         letter-spacing: 0.019em;
     
         color: $description-light;
+        
+        @include for-size(tablet) {
+            
+            font-size: 14px;
+            line-height: 1.58;
+            margin-left: 18px;
+            margin-right: 0;
+        }
     }
 
     &__btn {
@@ -77,6 +126,11 @@
         margin-left: 30px;
         margin-bottom: 39px;
 
+        @include for-size(tablet) {
+            margin-left: 360px;
+            margin-top: 62px;
+            margin-bottom: 66px;
+        }
     }
 
     &__link {
@@ -89,6 +143,17 @@
 
     }
 
+}
+
+.test {
+
+    @include for-size(tablet) {
+     
+        display: flex;
+        flex-direction: column;
+        max-width: 340px;
+      
+    }
 }
 
 

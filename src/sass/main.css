@@ -487,6 +487,14 @@ address {
   text-transform: uppercase;
 }
 
+@media (min-width: 768px) {
+  .page-made__subtitle {
+    padding-top: 130px;
+    font-size: 26px;
+    line-height: 1.15;
+  }
+}
+
 .page-made__title {
   margin-top: 15px;
   font-family: Titan One;
@@ -496,6 +504,15 @@ address {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #d41443;
+}
+
+@media (min-width: 768px) {
+  .page-made__title {
+    margin-bottom: 50px;
+    font-family: Titan One;
+    font-size: 48px;
+    line-height: 1.14;
+  }
 }
 
 @media (min-width: 768px) {
@@ -510,6 +527,15 @@ address {
   margin-top: 26px;
 }
 
+@media (min-width: 768px) {
+  .description__img {
+    width: 100%;
+    max-width: 340px;
+    max-height: 340px;
+    margin: 0;
+  }
+}
+
 .description__title {
   margin-top: 46px;
   margin-left: 30px;
@@ -519,6 +545,16 @@ address {
   line-height: 1.58;
   text-align: initial;
   color: #000000;
+}
+
+@media (min-width: 768px) {
+  .description__title {
+    margin-left: 18px;
+    margin-right: 0;
+    font-size: 14px;
+    line-height: 1.76;
+    margin-top: 60px;
+  }
 }
 
 .description__text {
@@ -532,10 +568,27 @@ address {
   color: #907e82;
 }
 
+@media (min-width: 768px) {
+  .description__text {
+    font-size: 14px;
+    line-height: 1.58;
+    margin-left: 18px;
+    margin-right: 0;
+  }
+}
+
 .description__btn {
   margin-top: 20px;
   margin-left: 30px;
   margin-bottom: 39px;
+}
+
+@media (min-width: 768px) {
+  .description__btn {
+    margin-left: 360px;
+    margin-top: 62px;
+    margin-bottom: 66px;
+  }
 }
 
 .description__link {
@@ -544,6 +597,19 @@ address {
   padding-right: 14px;
   text-decoration: none;
   color: #d41443;
+}
+
+@media (min-width: 768px) {
+  .test {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 340px;
+  }
 }
 
 .svg-btn__arrow {
