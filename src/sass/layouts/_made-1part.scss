@@ -25,7 +25,17 @@
           line-height: 1.15    
 
     }
- 
+
+       @include for-size(desktop) {
+            
+          
+           font-size: 30px;
+           line-height: 1.13;
+           text-align: center;
+           letter-spacing: 0.04em;
+           text-transform: uppercase;
+       }
+    
     }
 
     &__title {
@@ -48,17 +58,32 @@
         line-height: 1.14;
 
        }
+
+       @include for-size(desktop) {
+
+       
+        font-size: 58px;
+        line-height: 1.13;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        
+        
+       }
     }
 }
 
 .description {
 
     @include for-size(tablet) {
-
        
         display: flex;
-       
-     
+    }
+
+    @include for-size(desktop) {
+      
+        display: flex;
+        // outline: 1px solid tomato;
     }
  
     &__img {
@@ -70,6 +95,13 @@
               max-width: 340px;
               max-height: 340px;
               margin: 0;
+          }
+          @include for-size(desktop){
+            width: 100%;
+            min-width: 516px;
+            min-height: 516px;
+            margin: 0;
+            margin-right: 30px;
           }
     }
 
@@ -93,8 +125,18 @@
             font-size: 14px;
             line-height: 1.76;
             margin-top: 60px;
-          
             
+        }
+
+        @include for-size(desktop) {
+
+            margin-top: 56px;
+            margin-left: 0;
+            width: 463px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.76;
+            letter-spacing: 0.04em;
         }
     }
 
@@ -116,6 +158,14 @@
             line-height: 1.58;
             margin-left: 18px;
             margin-right: 0;
+        }
+
+        @include for-size(desktop){
+            margin-left: 0;
+            width: 463px;
+            font-size: 14px;
+            line-height: 1.94;
+            letter-spacing: 0.04em;
         }
     }
 
@@ -145,7 +195,7 @@
 
 }
 
-.test {
+.container-text{
 
     @include for-size(tablet) {
      
@@ -153,6 +203,11 @@
         flex-direction: column;
         max-width: 340px;
       
+    }
+
+    @include for-size(desktop) {
+
+     
     }
 }
 
@@ -178,6 +233,17 @@
     @include for-size(tablet) {
 
       display: none;
+
+    }
+
+    @include for-size(desktop) {
+
+        outline: 1px solid tomato;
+        position: absolute;
+        background-image: url("../images/desk-piecemilk.png");
+        top: 0;
+        display: none;
+        height: 534px;
 
     }
 }
