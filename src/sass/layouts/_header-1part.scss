@@ -1,8 +1,4 @@
 .header {
-  overflow: hidden;
-  min-height: 502px;
-  background-color: $bg-header;
-
   .container {
     position: relative;
 
@@ -45,18 +41,19 @@
     padding-bottom: 0;
     width: 160px;
     height: 44px;
+
     transition: $smoothly;
     @include font(16px, 21px, 700);
 
     &::after {
       position: absolute;
       content: '';
-      background-image: url('../images/arrow.svg');
       top: 53%;
       transform: translateY(-50%);
       width: 8px;
       height: 10px;
       right: 36px;
+      background-image: url('../images/arrow.svg');
     }
 
     @include for-size(desktop) {
@@ -70,7 +67,7 @@
     }
   }
 
-  &__img {
+  &__picture {
     width: 199px;
   }
 
@@ -95,6 +92,7 @@
   }
 
   &__mobile-menu {
+    z-index: 2;
     position: absolute;
     top: 0;
     right: 0;
@@ -172,6 +170,7 @@
     padding-left: 21px;
     padding-top: 11px;
     padding-bottom: 11px;
+
     text-decoration: none;
     color: $main-color;
     @include font(14px, 18px, 700);
@@ -214,12 +213,13 @@
     &::after {
       position: absolute;
       content: '';
-      background-image: url('../images/arrow.svg');
       top: 53%;
       transform: translateY(-50%);
       right: 47px;
       width: 8px;
       height: 10px;
+
+      background-image: url('../images/arrow.svg');
 
       @include for-size(tablet) {
         right: 43px;
