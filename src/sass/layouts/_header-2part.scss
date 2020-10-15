@@ -1,19 +1,15 @@
-.header {
-  width: 100px;
-  height: 50px;
-  background-color: black;
-}
-
 .header-section {
   background-color: $bg-header;
 }
 
 .header-wrapper {
+  position: relative;
   width: 320px;
   margin-right: auto;
   margin-left: auto;
-  padding-top: 6px;
   padding-bottom: 160px;
+
+  overflow: hidden;
 
   background-image: url(../images/icecream-bg-mob1x.png),
     url(../images/ellipse-bg-mob1x.png);
@@ -37,7 +33,6 @@
 
   @include for-size(tablet) {
     width: 768px;
-    padding-top: 37px;
     padding-bottom: 34px;
 
     background-image: url(../images/icecream-bg-tab1x.png),
