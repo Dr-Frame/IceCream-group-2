@@ -429,7 +429,7 @@ address {
 
 @media (min-width: 1280px) {
   .container {
-    width: 1200px;
+    width: 1280px;
     padding-left: 115px;
     padding-right: 115px;
   }
@@ -548,6 +548,7 @@ address {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-bottom: 40px;
   }
 }
 
@@ -570,7 +571,7 @@ address {
     min-width: 516px;
     min-height: 516px;
     margin: 0;
-    margin-right: 30px;
+    margin-right: 72px;
   }
 }
 
@@ -597,6 +598,7 @@ address {
 
 @media (min-width: 1280px) {
   .description__title {
+    z-index: 1;
     margin-top: 56px;
     margin-left: 0;
     width: 463px;
@@ -629,7 +631,9 @@ address {
 
 @media (min-width: 1280px) {
   .description__text {
+    z-index: 1;
     margin-left: 0;
+    margin-top: 30px;
     width: 463px;
     font-size: 14px;
     line-height: 1.94;
@@ -645,9 +649,18 @@ address {
 
 @media (min-width: 768px) {
   .description__btn {
-    margin-left: 360px;
+    margin-left: 20px;
     margin-top: 62px;
+    max-width: 182px;
     margin-bottom: 66px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .description__btn {
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-top: 45px;
   }
 }
 
@@ -696,11 +709,10 @@ address {
 
 @media (min-width: 1280px) {
   .milk-bgc {
-    outline: 1px solid tomato;
     position: absolute;
     background-image: url("../images/desk-piecemilk.png");
-    top: 0;
-    display: none;
+    top: 350px;
+    display: block;
     height: 534px;
   }
 }
