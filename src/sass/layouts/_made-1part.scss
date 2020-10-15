@@ -5,7 +5,8 @@
     position: relative;
     background-color: $bg-section;
    
-
+   
+ 
     &__subtitle {
 
       padding-top: 125px; 
@@ -34,6 +35,9 @@
 
 .description {
 
+    @include for-size(tablet) {
+        display: flex;
+    }
  
     &__img {
 
@@ -106,13 +110,11 @@
     height: 130px;
     width: 100%;
    
+    @include for-size(tablet) {
 
-    // @media screen and (max-width: 767px) {
+      display: none;
 
-    //     display: none;
-    // }
-    
-    
+    }
 }
 
 @media screen and (min-device-pixel-ratio: 2),

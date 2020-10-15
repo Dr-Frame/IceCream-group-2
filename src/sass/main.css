@@ -498,6 +498,14 @@ address {
   color: #d41443;
 }
 
+@media (min-width: 768px) {
+  .description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .description__img {
   margin-top: 26px;
 }
@@ -552,6 +560,12 @@ address {
   background-size: cover;
   height: 130px;
   width: 100%;
+}
+
+@media (min-width: 768px) {
+  .milk-bgc {
+    display: none;
+  }
 }
 
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
