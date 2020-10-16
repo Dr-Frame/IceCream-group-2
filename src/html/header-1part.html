@@ -1,0 +1,51 @@
+<header class="header">
+    <div class="container">
+
+
+        <div class="header__mobile-wrapper">
+            <a href="../index.html" class="link header__logo">
+                <img class="header__picture" alt="Company logo" width="199" src="./images/logo-1x.png" srcset="
+                    ./images/logo-1x.png 2x,
+                    ./images/logo-1x.png  3x
+                " />
+            </a>
+            <button id="open" class="header__btn-mobile">
+                <svg width="20" height="12" aria-label="Переключатель мобильного меню">
+                    <use href="./images/symbol-defs.svg#burger">
+                    </use>
+                </svg>
+            </button>
+            <button class="btn header__btn header__btn--invisible">Buy now</button>
+        </div>
+
+
+        <div class="header__mobile-menu is-hiden" id="menu-mobile">
+
+            <nav class="header__navigation">
+                <ul class="header__navigation-list">
+                    <li class="header__navigation-item">
+                        <a href="../index.html" class="header__navigation-link">Home</a></li>
+                    <li class="header__navigation-item">
+                        <a href="#." class="header__navigation-link">About us</a></li>
+                    <li class="header__navigation-item">
+                        <a href="#." class="header__navigation-link">How it’s made?</a></li>
+                    <li class="header__navigation-item">
+                        <a href="#." class="header__navigation-link">Our products</a></li>
+                    <li class="header__navigation-item">
+                        <a href="#." class="header__navigation-link">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="btn header__btn-menu">Buy now</button>
+
+            <button id="close" class="header__btn-mobile header__btn-mobile--close">
+                <svg width="20" height="12" aria-label=" Переключатель мобильного меню">
+                    <use href="./images/symbol-defs.svg#close-menu">
+                    </use>
+                </svg>
+            </button>
+        </div>
+
+    </div>
+</header>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
