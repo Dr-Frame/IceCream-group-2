@@ -347,7 +347,7 @@
   display: block;
   font-family: 'Titan One';
   font-weight: 400;
-  color: #d41443;
+  color: $secondary-color;
   letter-spacing: 0.04em;
   @include for-size(mobile-only) {
     font-size: 36px;
