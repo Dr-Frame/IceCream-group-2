@@ -276,132 +276,134 @@
 
 //  вторая часть 
 
-  .made-list {
-    list-style: none;
-    @include for-size(mobile-only) {
-      margin-bottom: 97px;
-    }
-    @include for-size(tablet) {
-      display: flex;
-      margin-bottom: 140px;
-    }
+.made-list {
+  list-style: none;
+  @include for-size(mobile-only) {
+    margin-bottom: 97px;
   }
-  .made-item:not(:last-child) {
-    @include for-size(mobile-only) {
-      margin-bottom: 38px;
-    }
-    @include for-size(tablet) {
-      margin-right: 60px;
-    }
-    @include for-size(desktop) {
-      margin-right: 30px;
-    }
+  @include for-size(tablet) {
+    display: flex;
+    margin-bottom: 140px;
   }
-  .made-item:nth-child(1)::before {
-    content: '';
-    display: block;
-    width: 33px;
-    height: 50px;
-    background-image: url(../images/made-icecream01.png);
-  
-    margin-bottom: 16px;
-  
-    @include for-size(tablet) {
-      margin-bottom: 36px;
-    }
-    @include for-size(desktop) {
-      margin-bottom: 40px;
-    }
+}
+.icecream-item:not(:last-child) {
+  @include for-size(mobile-only) {
+    margin-bottom: 38px;
   }
-  .made-item:nth-child(2)::before {
-    content: '';
-    display: block;
-    width: 50px;
-    height: 50px;
-    background-image: url(../images/made-icecream02.png);
-  
-    margin-bottom: 16px;
-    @include for-size(tablet) {
-      margin-bottom: 36px;
-    }
-    @include for-size(desktop) {
-      margin-bottom: 40px;
-    }
+  @include for-size(tablet) {
+    margin-right: 60px;
   }
-  .made-item:nth-child(3)::before {
-    content: '';
-    display: block;
-    width: 44px;
-    height: 50px;
-    background-image: url(../images/made-icecream03.png);
-    margin-bottom: 16px;
-  
-    @include for-size(tablet) {
-      margin-bottom: 36px;
-    }
-    @include for-size(desktop) {
-      margin-bottom: 40px;
-    }
+  @include for-size(desktop) {
+    margin-right: 30px;
   }
-  .made-heading {
-    display: block;
-    font-family: 'Titan One';
-    font-weight: 400;
-    color: #d41443;
-    letter-spacing: 0.04em;
-    @include for-size(mobile-only) {
-      font-size: 36px;
-      line-height: 41px;
-      text-transform: uppercase;
-  
-      margin-bottom: 12px;
-    }
-    @include for-size(tablet) {
-      font-size: 48px;
-      line-height: 55px;
-      margin-bottom: 13px;
-    }
-    @include for-size(desktop) {
-      font-size: 58px;
-      line-height: 66px;
-      margin-bottom: 15px;
-    }
-  }
-  .made-text {
+}
+.icecream-item:nth-child(1)::before {
+  content: '';
+  display: block;
+  width: 33px;
+  height: 50px;
+  background-image: url(../images/made-icecream01.png);
 
-    display: block;
-    font-family: 'DM Sans';
-    font-weight: 700;
-    @include for-size(mobile-only) {
-      width: 230px;
-      height: auto;
-      font-size: 12px;
-      line-height: 170%;
-    }
-  
-    @include for-size(tablet) {
-      width: 180px;
-      height: auto;
-      font-size: 14px;
-      line-height: 174%;
-    }
-    @include for-size(desktop) {
-      width: 330px;
-      height: auto;
-      font-size: 16px;
-      line-height: 176%;
-      letter-spacing: 0.02em;
-    }
+  margin-bottom: 16px;
+
+  @include for-size(tablet) {
+    margin-bottom: 36px;
   }
-  .img-collage {
-    @include for-size(mobile-only) {
-      margin-bottom: -74px;
-    }
-    @include for-size(tablet) {
-      margin-bottom: -158px;
-    }
-    @include for-size(desktop) {
-      margin-bottom: -259px;
-    }
+  @include for-size(desktop) {
+    margin-bottom: 40px;
   }
+}
+.icecream-item:nth-child(2)::before {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-image: url(../images/made-icecream02.png);
+
+  margin-bottom: 16px;
+  @include for-size(tablet) {
+    margin-bottom: 36px;
+  }
+  @include for-size(desktop) {
+    margin-bottom: 40px;
+  }
+}
+.icecream-item:nth-child(3)::before {
+  content: '';
+  display: block;
+  width: 44px;
+  height: 50px;
+  background-image: url(../images/made-icecream03.png);
+  margin-bottom: 16px;
+
+  @include for-size(tablet) {
+    margin-bottom: 36px;
+  }
+  @include for-size(desktop) {
+    margin-bottom: 40px;
+  }
+}
+.number-heading {
+  display: block;
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: normal;
+  color: #d41443;
+  letter-spacing: 0.04em;
+  @include for-size(mobile-only) {
+    font-size: 36px;
+    line-height: 41px;
+    text-transform: uppercase;
+
+    margin-bottom: 12px;
+  }
+  @include for-size(tablet) {
+    font-size: 48px;
+    line-height: 55px;
+    margin-bottom: 13px;
+  }
+  @include for-size(desktop) {
+    font-size: 58px;
+    line-height: 66px;
+    margin-bottom: 15px;
+  }
+}
+.text-info {
+  display: block;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: bold;
+  @include for-size(mobile-only) {
+    width: 230px;
+    height: auto;
+    font-size: 12px;
+    line-height: 170%;
+  }
+
+  @include for-size(tablet) {
+    width: 180px;
+    height: auto;
+    font-size: 14px;
+    line-height: 174%;
+  }
+  @include for-size(desktop) {
+    width: 330px;
+    height: auto;
+    font-size: 16px;
+    line-height: 176%;
+    letter-spacing: 0.02em;
+  }
+}
+.img-collage {
+  @include for-size(mobile-only) {
+    margin-bottom: -74px;
+  }
+  @include for-size(tablet) {
+    margin-bottom: -158px;
+  }
+  @include for-size(desktop) {
+    margin-bottom: -259px;
+  }
+}
+
   
