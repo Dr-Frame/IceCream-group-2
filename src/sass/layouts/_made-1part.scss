@@ -6,7 +6,7 @@
     background-color: $bg-section;
    
    
- 
+
     &__subtitle {
 
       padding-top: 125px; 
@@ -346,8 +346,7 @@
 .number-heading {
   display: block;
   font-family: 'Titan One';
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   color: #d41443;
   letter-spacing: 0.04em;
   @include for-size(mobile-only) {
@@ -369,10 +368,9 @@
   }
 }
 .text-info {
+  
   display: block;
-  font-family: 'DM Sans';
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   @include for-size(mobile-only) {
     width: 230px;
     height: auto;
