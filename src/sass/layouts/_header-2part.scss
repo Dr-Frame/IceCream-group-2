@@ -1,0 +1,338 @@
+.header-section {
+  background-color: $bg-header;
+}
+
+.header-wrapper {
+  position: relative;
+  width: 320px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 160px;
+
+  overflow: hidden;
+
+  background-image: url(../images/icecream-bg-mob1x.png),
+    url(../images/ellipse-bg-mob1x.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: left 117px bottom, left 36px bottom 75px;
+  background-size: 171px 410px, 346px 344px;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../images/icecream-bg-mob2x.png),
+      url(../images/ellipse-bg-mob2x.png);
+  }
+
+  @media screen and (min-device-pixel-ratio: 3),
+    screen and (min-resolution: 288dpi),
+    screen and (min-resolution: 3dppx) {
+    background-image: url(../images/icecream-bg-mob3x.png),
+      url(../images/ellipse-bg-mob3x.png);
+  }
+
+  @include for-size(tablet) {
+    width: 768px;
+    padding-bottom: 34px;
+
+    background-image: url(../images/icecream-bg-tab1x.png),
+      url(../images/sotasty-bg-tab1x.png),
+      url(../images/jug-of-milk-bg-tab1x.png), url(../images/ellipse-bg.svg),
+      url(../images/ellipse-bg.svg), url(../images/ellipse-bg-tab1x.png);
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
+      no-repeat;
+    background-position: right 247px bottom, right 34px bottom,
+      left 34px bottom 28px, right 34px top 94px, right 34px top 151px,
+      right 137px bottom 46px;
+    background-size: 143px 366px, 168px 133px, 124px 126px, 16px 16px, 16px 16px,
+      324px 322px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/icecream-bg-tab2x.png),
+        url(../images/sotasty-bg-tab2x.png),
+        url(../images/jug-of-milk-bg-tab2x.png),
+        url(../images/ellipse-bg-tab2x.png);
+    }
+
+    @media screen and (min-device-pixel-ratio: 3),
+      screen and (min-resolution: 288dpi),
+      screen and (min-resolution: 3dppx) {
+      background-image: url(../images/icecream-bg-tab3x.png),
+        url(../images/sotasty-bg-tab3x.png),
+        url(../images/jug-of-milk-bg-tab3x.png),
+        url(../images/ellipse-bg-tab3x.png);
+    }
+  }
+
+  @include for-size(desktop) {
+    width: 1280px;
+    padding-bottom: 56px;
+
+    background-image: url(../images/icecream-bg-desk1x.png),
+      url(../images/sotasty-bg-desk1x.png),
+      url(../images/jug-of-milk-bg-desk1x.png), url(../images/ellipse-bg.svg),
+      url(../images/ellipse-bg.svg), url(../images/ellipse-bg-desk1x.png);
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
+      no-repeat;
+    background-position: right 450px bottom, right 109px bottom,
+      left 77px bottom 45px, right 97px top 156px, right 97px top 248px,
+      right 267px bottom 75px;
+    background-size: 236px 557px, 293px 232px, 188px 191px, 30px 30px, 30px 30px,
+      538px 538px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/icecream-bg-desk2x.png),
+        url(../images/sotasty-bg-desk2x.png),
+        url(../images/jug-of-milk-bg-desk2x.png),
+        url(../images/ellipse-bg-desk2x.png);
+    }
+
+    @media screen and (min-device-pixel-ratio: 3),
+      screen and (min-resolution: 288dpi),
+      screen and (min-resolution: 3dppx) {
+      background-image: url(../images/icecream-bg-desk3x.png),
+        url(../images/sotasty-bg-desk3x.png),
+        url(../images/jug-of-milk-bg-desk3x.png),
+        url(../images/ellipse-bg-desk3x.png);
+    }
+  }
+}
+
+.container {
+  @include for-size(desktop) {
+    width: 1280px;
+  }
+}
+
+.hero {
+  margin-top: 137px;
+
+  @include for-size(tablet) {
+    margin-top: 9px;
+  }
+
+  @include for-size(desktop) {
+    margin-top: 73px;
+  }
+}
+
+.hero-wrap {
+  @include for-size(tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.hero__title-box {
+  width: 218px;
+
+  @include for-size(tablet) {
+    width: 162px;
+    margin-top: 6px;
+  }
+
+  @include for-size(desktop) {
+    width: 277px;
+    margin-top: 11px;
+  }
+}
+
+.hero__title {
+  margin-bottom: 19px;
+
+  font-family: Titan One, Open Sans;
+  @include font(26px, 1.15, 400);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $main-color;
+
+  @include for-size(tablet) {
+    margin-bottom: 20px;
+    font-size: 22px;
+    line-height: 1.13;
+  }
+
+  @include for-size(desktop) {
+    margin-bottom: 25px;
+    font-size: 38px;
+  }
+}
+
+.hero__title-decoration {
+  font-size: 48px;
+  line-height: 0.95;
+  color: $secondary-color;
+
+  @include for-size(mobile-only) {
+    letter-spacing: 0;
+  }
+
+  @include for-size(tablet) {
+    font-size: 34px;
+    line-height: 0.91;
+  }
+
+  @include for-size(desktop) {
+    font-size: 58px;
+  }
+}
+
+.hero__btn-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.hero__btn-item {
+  height: 24px;
+
+  &:nth-child(1) {
+    width: 62px;
+    margin-right: 8px;
+  }
+
+  &:nth-child(2) {
+    width: 83px;
+  }
+
+  @include for-size(desktop) {
+    height: 40px;
+
+    &:nth-child(1) {
+      width: 104px;
+      margin-right: 15px;
+    }
+
+    &:nth-child(2) {
+      width: 138px;
+    }
+  }
+}
+
+.hero__btn-link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+
+  padding-top: 0;
+  padding-bottom: 0;
+
+  @include font(8px, 1.25, 400);
+  text-decoration: none;
+
+  @include for-size(desktop) {
+    font-size: 14px;
+    line-height: 1.29;
+  }
+}
+
+.hero__stat-list {
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @include for-size(tablet) {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+  }
+
+  @include for-size(desktop) {
+    margin-right: 0px;
+  }
+}
+
+.hero__stat-item {
+  position: relative;
+  width: 43px;
+
+  &:first-child {
+    margin-bottom: 14px;
+  }
+
+  @include for-size(desktop) {
+    width: 74px;
+
+    &:first-child {
+      margin-bottom: 18px;
+    }
+  }
+}
+
+.hero__stat-content {
+  font-family: Titan One, Open Sans;
+  @include font(28px, 1.143, 400);
+  color: $secondary-color;
+  text-align: right;
+
+  @include for-size(desktop) {
+    margin-bottom: 2px;
+
+    font-size: 46px;
+  }
+}
+
+.hero__stat-content2 {
+  @include font(8px, 1.25, 400);
+  color: $main-color;
+  text-align: right;
+
+  @include for-size(desktop) {
+    font-size: 14px;
+    line-height: 1.29;
+  }
+}
+
+.promo-text-box {
+  display: none;
+
+  @include for-size(tablet) {
+    display: block;
+    width: 114px;
+
+    margin-top: 66px;
+    margin-left: 120px;
+  }
+
+  @include for-size(desktop) {
+    width: 200px;
+
+    margin-top: 112px;
+    margin-left: 180px;
+  }
+}
+
+.hero__promo-text {
+  margin-bottom: 7px;
+
+  @include font(8px, 1.5, 400);
+  color: $main-color;
+
+  @include for-size(desktop) {
+    margin-bottom: 20px;
+
+    font-size: 14px;
+    line-height: 1.43;
+  }
+}
+
+.hero__promo-link {
+  display: block;
+  width: 18px;
+  height: 18px;
+
+  border-radius: 50%;
+
+  text-decoration: none;
+
+  @include for-size(desktop) {
+    width: 26px;
+    height: 26px;
+  }
+}
