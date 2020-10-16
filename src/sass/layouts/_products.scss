@@ -50,6 +50,16 @@
     margin-bottom: 129px;
   }
   &__item {
+    border-radius: 24px;
+    &:nth-child(1) {
+      background-color: $bg-header;
+    }
+    &:nth-child(2) {
+      background-color: #f0d1a5;
+    }
+    &:nth-child(3) {
+      background-color: #c2e297;
+    }
     @include for-size(tablet) {
       margin-bottom: 0px;
       width: calc((100% - 20px * 2) / 3);
@@ -74,7 +84,6 @@
     position: relative;
     padding-top: 161px;
     padding-bottom: 41px;
-    border-radius: 24px;
   }
   &__name {
     margin-bottom: 30px;
@@ -134,12 +143,12 @@
     margin-right: auto;
   }
 }
-.pink {
-  background-color: $bg-header;
-}
-.brown {
-  background-color: #f0d1a5;
-}
-.green {
-  background-color: #c2e297;
-}
+// .pink {
+//   background-color: $bg-header;
+// }
+// .brown {
+//   background-color: #f0d1a5;
+// }
+// .green {
+//   background-color: #c2e297;
+// }

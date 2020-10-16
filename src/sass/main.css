@@ -538,6 +538,22 @@ address {
   margin-bottom: 129px;
 }
 
+.products__item {
+  border-radius: 24px;
+}
+
+.products__item:nth-child(1) {
+  background-color: #ffb8ca;
+}
+
+.products__item:nth-child(2) {
+  background-color: #f0d1a5;
+}
+
+.products__item:nth-child(3) {
+  background-color: #c2e297;
+}
+
 @media (min-width: 768px) {
   .products__item {
     margin-bottom: 0px;
@@ -564,7 +580,6 @@ address {
   position: relative;
   padding-top: 161px;
   padding-bottom: 41px;
-  border-radius: 24px;
 }
 
 .products__name {
@@ -649,17 +664,5 @@ address {
   margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
-}
-
-.pink {
-  background-color: #ffb8ca;
-}
-
-.brown {
-  background-color: #f0d1a5;
-}
-
-.green {
-  background-color: #c2e297;
 }
 /*# sourceMappingURL=main.css.map */
