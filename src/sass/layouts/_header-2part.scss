@@ -102,12 +102,6 @@
   }
 }
 
-.container {
-  @include for-size(desktop) {
-    width: 1280px;
-  }
-}
-
 .hero {
   margin-top: 137px;
 
