@@ -464,7 +464,7 @@ address {
   padding-bottom: 98px;
 }
 
-.products__title-pink {
+.products__title {
   text-align: center;
   text-transform: uppercase;
   font-family: Titan One;
@@ -472,11 +472,11 @@ address {
   line-height: 1.1667;
   font-weight: 400;
   color: #ffa5ba;
-  margin-bottom: 15px;
+  margin-bottom: 0px;
 }
 
 @media (min-width: 768px) {
-  .products__title-pink {
+  .products__title {
     font-size: 26px;
     line-height: 1.15;
     font-weight: 400;
@@ -484,14 +484,14 @@ address {
 }
 
 @media (min-width: 1280px) {
-  .products__title-pink {
+  .products__title {
     font-size: 30px;
     line-height: 1.133;
     font-weight: 400;
   }
 }
 
-.products__title-red {
+.products__title-decoration {
   text-align: center;
   text-transform: uppercase;
   font-family: Titan One;
@@ -500,11 +500,12 @@ address {
   font-weight: 400;
   letter-spacing: 0.04em;
   color: #d41443;
+  margin-top: 15px;
   margin-bottom: 144px;
 }
 
 @media (min-width: 768px) {
-  .products__title-red {
+  .products__title-decoration {
     font-size: 48px;
     line-height: 1.15;
     font-weight: 400;
@@ -513,7 +514,7 @@ address {
 }
 
 @media (min-width: 1280px) {
-  .products__title-red {
+  .products__title-decoration {
     font-size: 58px;
     line-height: 1.138;
     font-weight: 400;
