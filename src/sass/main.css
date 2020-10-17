@@ -1427,18 +1427,18 @@ address {
   }
 }
 
-.made-list {
+.made__list {
   list-style: none;
 }
 
 @media (max-width: 767px) {
-  .made-list {
+  .made__list {
     margin-bottom: 97px;
   }
 }
 
 @media (min-width: 768px) {
-  .made-list {
+  .made__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1447,24 +1447,24 @@ address {
 }
 
 @media (max-width: 767px) {
-  .icecream-item:not(:last-child) {
+  .made__item:not(:last-child) {
     margin-bottom: 38px;
   }
 }
 
 @media (min-width: 768px) {
-  .icecream-item:not(:last-child) {
+  .made__item:not(:last-child) {
     margin-right: 60px;
   }
 }
 
 @media (min-width: 1280px) {
-  .icecream-item:not(:last-child) {
+  .made__item:not(:last-child) {
     margin-right: 30px;
   }
 }
 
-.icecream-item:nth-child(1)::before {
+.made__item:nth-child(1)::before {
   content: '';
   display: block;
   width: 33px;
@@ -1474,18 +1474,18 @@ address {
 }
 
 @media (min-width: 768px) {
-  .icecream-item:nth-child(1)::before {
+  .made__item:nth-child(1)::before {
     margin-bottom: 36px;
   }
 }
 
 @media (min-width: 1280px) {
-  .icecream-item:nth-child(1)::before {
+  .made__item:nth-child(1)::before {
     margin-bottom: 40px;
   }
 }
 
-.icecream-item:nth-child(2)::before {
+.made__item:nth-child(2)::before {
   content: '';
   display: block;
   width: 50px;
@@ -1495,18 +1495,18 @@ address {
 }
 
 @media (min-width: 768px) {
-  .icecream-item:nth-child(2)::before {
+  .made__item:nth-child(2)::before {
     margin-bottom: 36px;
   }
 }
 
 @media (min-width: 1280px) {
-  .icecream-item:nth-child(2)::before {
+  .made__item:nth-child(2)::before {
     margin-bottom: 40px;
   }
 }
 
-.icecream-item:nth-child(3)::before {
+.made__item:nth-child(3)::before {
   content: '';
   display: block;
   width: 44px;
@@ -1516,13 +1516,13 @@ address {
 }
 
 @media (min-width: 768px) {
-  .icecream-item:nth-child(3)::before {
+  .made__item:nth-child(3)::before {
     margin-bottom: 36px;
   }
 }
 
 @media (min-width: 1280px) {
-  .icecream-item:nth-child(3)::before {
+  .made__item:nth-child(3)::before {
     margin-bottom: 40px;
   }
 }
@@ -1530,15 +1530,15 @@ address {
 .number-heading {
   display: block;
   font-family: 'Titan One';
-  font-weight: 400;
-  color: #d41443;
   letter-spacing: 0.04em;
+  color: #d41443;
 }
 
 @media (max-width: 767px) {
   .number-heading {
     font-size: 36px;
-    line-height: 41px;
+    line-height: 1.13;
+    font-weight: 500;
     text-transform: uppercase;
     margin-bottom: 12px;
   }
@@ -1547,7 +1547,8 @@ address {
 @media (min-width: 768px) {
   .number-heading {
     font-size: 48px;
-    line-height: 55px;
+    line-height: 1.14;
+    font-weight: 500;
     margin-bottom: 13px;
   }
 }
@@ -1555,13 +1556,16 @@ address {
 @media (min-width: 1280px) {
   .number-heading {
     font-size: 58px;
-    line-height: 66px;
+    line-height: 1.13;
+    font-weight: 500;
     margin-bottom: 15px;
   }
 }
 
 .text-info {
   display: block;
+  font-size: 12px;
+  line-height: 1.66;
   font-weight: 700;
 }
 
@@ -1570,7 +1574,8 @@ address {
     width: 230px;
     height: auto;
     font-size: 12px;
-    line-height: 170%;
+    line-height: 1.66;
+    font-weight: 700;
   }
 }
 
@@ -1579,7 +1584,8 @@ address {
     width: 180px;
     height: auto;
     font-size: 14px;
-    line-height: 174%;
+    line-height: 1.74;
+    font-weight: 700;
   }
 }
 
@@ -1588,7 +1594,8 @@ address {
     width: 330px;
     height: auto;
     font-size: 16px;
-    line-height: 176%;
+    line-height: 1.76;
+    font-weight: 700;
     letter-spacing: 0.02em;
   }
 }
