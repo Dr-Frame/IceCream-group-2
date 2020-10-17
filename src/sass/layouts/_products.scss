@@ -1,0 +1,146 @@
+.products {
+  background-color: $main-color;
+  padding-top: 121px;
+  padding-bottom: 98px;
+
+  &__title {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Titan One;
+    @include font(18px, 1.1667, 400);
+    color: $light-color;
+    margin-bottom: 0px;
+
+    @include for-size(tablet) {
+      @include font(26px, 1.15, 400);
+    }
+    @include for-size(desktop) {
+      @include font(30px, 1.133, 400);
+    }
+  }
+  &__title-decoration {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Titan One;
+    @include font(34px, 1.15, 400);
+    letter-spacing: 0.04em;
+    color: $secondary-color;
+    margin-top: 15px;
+    margin-bottom: 144px;
+
+    @include for-size(tablet) {
+      @include font(48px, 1.15, 400);
+      margin-bottom: 150px;
+    }
+    @include for-size(desktop) {
+      @include font(58px, 1.138, 400);
+      margin-bottom: 259px;
+    }
+  }
+  &__list {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+
+    @include for-size(tablet) {
+      display: flex;
+    }
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 129px;
+  }
+  &__item {
+    border-radius: 24px;
+    &:nth-child(1) {
+      background-color: $bg-header;
+    }
+    &:nth-child(2) {
+      background-color: #f0d1a5;
+    }
+    &:nth-child(3) {
+      background-color: #c2e297;
+    }
+    @include for-size(tablet) {
+      margin-bottom: 0px;
+      width: calc((100% - 20px * 2) / 3);
+
+      &:not(:last-child) {
+        margin-right: 20px;
+        margin-bottom: 0px;
+      }
+    }
+    @include for-size(desktop) {
+      margin-bottom: 0px;
+      width: calc((100% - 23px * 2) / 3);
+
+      &:not(:last-child) {
+        margin-right: 23px;
+        margin-bottom: 0px;
+      }
+    }
+  }
+
+  &__box {
+    position: relative;
+    padding-top: 161px;
+    padding-bottom: 41px;
+  }
+  &__name {
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Titan One;
+    @include font(20px, 1.15, 400);
+    letter-spacing: 0.04em;
+    color: $main-color;
+
+    @include for-size(desktop) {
+      @include font(30px, 1.133, 400);
+    }
+  }
+  &__icon {
+    width: 32px;
+    height: 32px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+  &__text {
+    padding-right: 40px;
+    padding-left: 40px;
+    text-align: center;
+    @include font(14px, 1.52, 700);
+    letter-spacing: 0.04em;
+    color: $main-color;
+
+    @include for-size(tablet) {
+      @include font(14px, 1.76, 700);
+    }
+    @include for-size(desktop) {
+      @include font(16px, 1.76, 700);
+    }
+  }
+  &__foto {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 249px;
+
+    @include for-size(tablet) {
+      width: 220px;
+    }
+    @include for-size(desktop) {
+      width: 335px;
+    }
+  }
+  &__arrow {
+    width: 40px;
+    height: 40px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
