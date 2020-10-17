@@ -10,10 +10,14 @@
     <span class="page-made__title">how it’s made?</span>
 
     <div class="description">
-
-      <img class="description__img img" src="./images/cow.png" srcset="./images/cow@2x.png 2x,
-         ./images/cow@3x.png 3x" width="280" alt="cow-with-milk">
-
+      <picture>
+        <source srcset="./images/cow-desk1x.png 1x, ./images/cow-desk2x.png 2x, ./images/cow-desk3x.png 3x"
+          media="(min-width: 1280px">
+        <source srcset="./images/cow-tab1x.png 1x, ./images/cow-tab2x.png 2x, ./images/cow-tab3x.png 3x"
+          media="(min-width: 768px">
+        <img class="description__img img" src="./images/cow-mob1x.png" srcset="./images/cow-mob2x.png 2x,
+         ./images/cow-mob3x.png 3x" width="280" alt="cow-with-milk">
+      </picture>
       <div class="description__container-text">
         <p class="description__title">
           Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas
