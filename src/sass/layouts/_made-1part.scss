@@ -1,5 +1,6 @@
 .page-made {
   position: relative;
+  padding-bottom: 145px;
   background-color: $bg-section;
 
   &__subtitle {
@@ -146,9 +147,15 @@
   }
 
   &__btn {
+    width: 176px;
+    height: 44px;
     margin-top: 20px;
     margin-left: 30px;
     margin-bottom: 39px;
+    padding-left: 10px;
+
+    color: $secondary-color;
+    cursor: pointer;
 
     @include for-size(tablet) {
       max-width: 182px;
@@ -168,17 +175,18 @@
     &--arrow {
       width: 10px;
       height: 10px;
-      margin-right: 38px;
+      margin-top: 2px;
+      margin-left: 15px;
     }
 
-    &--link {
+    /* &--link {
       display: block;
       padding-left: 37px;
       padding-right: 14px;
 
       text-decoration: none;
       color: $secondary-color;
-    }
+    } */
   }
 
   &__milk-bgc {
@@ -187,8 +195,28 @@
     left: 0;
     height: 130px;
     width: 100%;
-    background-image: url('../images/piecemilk.png');
-    background-size: cover;
+
+    @include for-size(mobile) {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 320px;
+      background-image: url('../images/piecemilk.png');
+      background-repeat: no-repeat;
+      top: 766px;
+      display: block;
+      height: 133px;
+
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (-webkit-min-device-pixel-ratio: 2),
+        screen and (-o-min-device-pixel-ratio: 2/1),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        .description__milk-bgc {
+          background-image: url('../images/piecemilk@2x.png');
+        }
+      }
+    }
 
     @include for-size(tablet) {
       display: none;
@@ -196,10 +224,24 @@
 
     @include for-size(desktop) {
       position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 1280px;
       background-image: url('../images/desk-piecemilk.png');
+      background-repeat: no-repeat;
       top: 350px;
       display: block;
       height: 534px;
+
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (-webkit-min-device-pixel-ratio: 2),
+        screen and (-o-min-device-pixel-ratio: 2/1),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        .description__milk-bgc {
+          background-image: url('../images/desk-piecemilk@2x.png');
+        }
+      }
     }
   }
 
@@ -212,29 +254,13 @@
   }
 }
 
-@media screen and (min-device-pixel-ratio: 2),
-  screen and (-webkit-min-device-pixel-ratio: 2),
-  screen and (-o-min-device-pixel-ratio: 2/1),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
-  .description__milk-bgc {
-    background-image: url('../images/piecemilk@2x.png');
-  }
-}
-
 //  вторая часть
 
 .made__list {
   list-style: none;
 
-  @include for-size(mobile-only) {
-    margin-bottom: 97px;
-  }
-
   @include for-size(tablet) {
     display: flex;
-
-    margin-bottom: 140px;
   }
 }
 .made__item:not(:last-child) {
@@ -344,14 +370,60 @@
     letter-spacing: 0.02em;
   }
 }
-.img-collage {
-  @include for-size(mobile-only) {
-    margin-bottom: -74px;
+
+.section-collage {
+  position: relative;
+}
+
+.pink-bg {
+  background-color: $bg-section;
+
+  @include for-size(mobile) {
+    height: 48px;
   }
+
   @include for-size(tablet) {
-    margin-bottom: -158px;
+    height: 106px;
   }
+
   @include for-size(desktop) {
-    margin-bottom: -259px;
+    height: 171px;
+  }
+}
+
+.white-bg {
+  background-color: #fff;
+
+  @include for-size(mobile) {
+    height: 74px;
+  }
+
+  @include for-size(tablet) {
+    height: 158px;
+  }
+
+  @include for-size(desktop) {
+    height: 259px;
+  }
+}
+
+.img-collage {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @include for-size(mobile) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 280px;
+  }
+
+  @include for-size(tablet) {
+    width: 706px;
+  }
+
+  @include for-size(desktop) {
+    width: 1050px;
   }
 }

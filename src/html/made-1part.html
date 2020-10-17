@@ -26,9 +26,9 @@
           tincidunt.<br><br>
           Aliquam erat volutpat. Aenean accumsan.
         </p>
-        <button type="button" class="btn description__btn">
+        <button type="button" class="btn description__btn">Read more
 
-          <a href="#" class="description__btn--link">Read more</a>
+          <!--  <a href="#" class="description__btn--link">Read more</a> -->
 
           <svg class="description__btn--arrow">
 
@@ -73,19 +73,26 @@
         </div>
       </li>
     </ul>
-    <picture>
-      <source srcset="./images/made-collag320.png" media="(max-width: 767px)" />
-      <source srcset="
-      ./images/made-collag1200.jpg    1x,
-      ./images/made-collag1200@2x.jpg 2x
-    " media="(min-width: 1280px)" />
-      <source srcset="
-      ./images/made-collag768.jpg    1x,
-      ./images/made-collag768@2x.jpg 2x
-    " media="(min-width: 768px) and (max-width: 1279px)" />
-      <img class="img-collage" src="./images/made-collag768.jpg" alt="" /></picture>
+
 
   </div>
 
 
 </section>
+
+<div class="section-collage">
+  <div class="pink-bg"></div>
+  <div class="white-bg"></div>
+
+  <picture>
+    <source srcset="
+          ./images/made-collag1200.jpg    1x,
+          ./images/made-collag1200@2x.jpg 2x
+        " media="(min-width: 1280px)" />
+    <source srcset="
+          ./images/made-collag768.jpg    1x,
+          ./images/made-collag768@2x.jpg 2x
+        " media="(min-width: 768px) and (max-width: 1279px)" />
+    <source srcset="./images/made-collag320.png" media="(max-width: 767px)" />
+    <img class="img-collage" src="./images/made-collag768.jpg" alt="" /></picture>
+</div>

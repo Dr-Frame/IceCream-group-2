@@ -1,5 +1,9 @@
 .footer {
   background-color: $bg-section;
+  padding-top: 113px;
+  @include for-size(tablet) {
+    padding-top: 165px;
+  }
 
   &__container {
     @include for-size(tablet) {
