@@ -114,7 +114,7 @@
   }
 }
 
-.hero-wrap {
+.hero__wrap {
   @include for-size(tablet) {
     display: flex;
     justify-content: space-between;
@@ -283,7 +283,7 @@
   }
 }
 
-.promo-text-box {
+.hero__promo-box {
   display: none;
 
   @include for-size(tablet) {

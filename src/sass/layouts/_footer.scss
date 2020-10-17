@@ -1,6 +1,6 @@
 .footer {
   background-color: $bg-section;
-​
+
   &__container {
     @include for-size(tablet) {
       @include flexElement(space-between, flex-start);
@@ -10,9 +10,10 @@
       margin-bottom: 96px;
     }
   }
-​
+
   &__title-wrapper {
     width: 234px;
+
     @include for-size(tablet) {
       width: 340px;
     }
@@ -21,7 +22,7 @@
       width: 477px;
     }
   }
-​
+
   &__title {
     margin-bottom: 43px;
 
@@ -39,7 +40,7 @@
     @include for-size(desktop) {
       @include font(30px, 34px, 400);
     }
-​
+
     span {
       display: block;
       margin-top: 17px;
@@ -57,21 +58,21 @@
       }
     }
   }
-​
+
   &__social-list {
     margin-bottom: 46px;
     @include flexElement(flex-end, center);
     list-style-type: none;
   }
-​
+
   &__social-item {
     margin-right: 28.24px;
-​
+
     &:last-child {
       margin-right: 0;
     }
   }
-​
+
   &__social-link {
     @include flexElement();
     background-color: $bg-social-icons;
@@ -84,12 +85,12 @@
       width: 34px;
       height: 34px;
     }
-​
+
     &:hover {
       background-color: $secondary-color;
     }
   }
-​
+
   &__text {
     margin-bottom: 43px;
     text-align: right;
@@ -105,12 +106,12 @@
       letter-spacing: 0.02em;
     }
   }
-​
+
   &__phone {
     color: $secondary-color;
     @include font(13px, 24px, 700);
   }
-​
+
   &__copyright {
     padding: 22px 91px 25px 79px;
 
@@ -128,7 +129,7 @@
     @include for-size(desktop) {
       padding: 9px 0 10px 0;
     }
-​
+
     span {
       display: block;
 
