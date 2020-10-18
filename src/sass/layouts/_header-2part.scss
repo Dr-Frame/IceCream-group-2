@@ -52,8 +52,8 @@
       screen and (min-resolution: 2dppx) {
       background-image: url(../images/icecream-bg-tab2x.png),
         url(../images/sotasty-bg-tab2x.png),
-        url(../images/jug-of-milk-bg-tab2x.png),
-        url(../images/ellipse-bg-tab2x.png);
+        url(../images/jug-of-milk-bg-tab2x.png), url(../images/ellipse-bg.svg),
+        url(../images/ellipse-bg.svg), url(../images/ellipse-bg-tab2x.png);
     }
 
     @media screen and (min-device-pixel-ratio: 3),
@@ -61,8 +61,8 @@
       screen and (min-resolution: 3dppx) {
       background-image: url(../images/icecream-bg-tab3x.png),
         url(../images/sotasty-bg-tab3x.png),
-        url(../images/jug-of-milk-bg-tab3x.png),
-        url(../images/ellipse-bg-tab3x.png);
+        url(../images/jug-of-milk-bg-tab3x.png), url(../images/ellipse-bg.svg),
+        url(../images/ellipse-bg.svg), url(../images/ellipse-bg-tab3x.png);
     }
   }
 
@@ -87,8 +87,8 @@
       screen and (min-resolution: 2dppx) {
       background-image: url(../images/icecream-bg-desk2x.png),
         url(../images/sotasty-bg-desk2x.png),
-        url(../images/jug-of-milk-bg-desk2x.png),
-        url(../images/ellipse-bg-desk2x.png);
+        url(../images/jug-of-milk-bg-desk2x.png), url(../images/ellipse-bg.svg),
+        url(../images/ellipse-bg.svg), url(../images/ellipse-bg-desk2x.png);
     }
 
     @media screen and (min-device-pixel-ratio: 3),
@@ -96,8 +96,8 @@
       screen and (min-resolution: 3dppx) {
       background-image: url(../images/icecream-bg-desk3x.png),
         url(../images/sotasty-bg-desk3x.png),
-        url(../images/jug-of-milk-bg-desk3x.png),
-        url(../images/ellipse-bg-desk3x.png);
+        url(../images/jug-of-milk-bg-desk3x.png), url(../images/ellipse-bg.svg),
+        url(../images/ellipse-bg.svg), url(../images/ellipse-bg-desk3x.png);
     }
   }
 }
