@@ -11,24 +11,26 @@
 
   overflow: hidden;
 
-  background-image: url(../images/icecream-bg-mob1x.png),
-    url(../images/ellipse-bg-mob1x.png);
-  background-repeat: no-repeat, no-repeat;
-  background-position: left 117px bottom, left 36px bottom 75px;
-  background-size: 171px 410px, 346px 344px;
+  @include for-size(mobile) {
+    background-image: url(../images/icecream-bg-mob1x.png),
+      url(../images/ellipse-bg-mob1x.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: left 117px bottom, left 36px bottom 75px;
+    background-size: 171px 410px, 346px 344px;
 
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    background-image: url(../images/icecream-bg-mob2x.png),
-      url(../images/ellipse-bg-mob2x.png);
-  }
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/icecream-bg-mob2x.png),
+        url(../images/ellipse-bg-mob2x.png);
+    }
 
-  @media screen and (min-device-pixel-ratio: 3),
-    screen and (min-resolution: 288dpi),
-    screen and (min-resolution: 3dppx) {
-    background-image: url(../images/icecream-bg-mob3x.png),
-      url(../images/ellipse-bg-mob3x.png);
+    @media screen and (min-device-pixel-ratio: 3),
+      screen and (min-resolution: 288dpi),
+      screen and (min-resolution: 3dppx) {
+      background-image: url(../images/icecream-bg-mob3x.png),
+        url(../images/ellipse-bg-mob3x.png);
+    }
   }
 
   @include for-size(tablet) {
