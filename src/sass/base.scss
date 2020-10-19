@@ -36,6 +36,54 @@ img {
   height: auto;
 }
 
+.invisible {
+  display: none;
+}
+
+.back {
+  position: absolute;
+  top: 40px;
+  right: 20px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 30px;
+
+  background-color: $light-color;
+  border-radius: 22px;
+  border: none;
+  opacity: 0.5;
+
+  text-decoration: none;
+  color: $secondary-color;
+  @include font(12px, 16px, 700);
+  transition: $smoothly;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
+
+  @include for-size(mobile) {
+    width: 60px;
+    height: 30px;
+    @include font(12px, 16px, 700);
+  }
+
+  @include for-size(tablet) {
+    width: 70px;
+    height: 35px;
+    @include font(14px, 18px, 700);
+  }
+
+  @include for-size(desktop) {
+    width: 80px;
+    height: 40px;
+    @include font(16px, 21px, 700);
+  }
+}
+
 .link {
   text-decoration: none;
   transition: $smoothly;

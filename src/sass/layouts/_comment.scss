@@ -4,6 +4,7 @@
   list-style: none;
 }
 .testimonials__container {
+  position: relative;
   padding: 80px 20px 86px 20px;
   text-align: center;
   @include for-size(tablet) {
