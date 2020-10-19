@@ -121,10 +121,13 @@
   background-color: #d9d9d9;
   border: transparent;
   border-radius: 50%;
+  outline: transparent;
+  cursor: pointer;
 }
 .slider .slick-dots li.slick-active button {
   background-image: url(../images/slider.svg);
   background-color: transparent;
   border-radius: unset;
   outline: transparent;
+  cursor: auto;
 }
