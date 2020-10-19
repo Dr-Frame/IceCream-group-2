@@ -326,6 +326,12 @@
   border-radius: 50%;
 
   text-decoration: none;
+  transition: $smoothly;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+  }
 
   @include for-size(desktop) {
     width: 26px;

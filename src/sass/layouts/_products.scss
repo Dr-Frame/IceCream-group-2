@@ -122,6 +122,20 @@
       @include font(16px, 1.76, 700);
     }
   }
+
+  &__link {
+    display: block;
+    width: 40px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: $smoothly;
+    &:hover,
+    &:focus {
+      transform: scale(1.2);
+    }
+  }
+
   &__foto {
     position: absolute;
     top: 0%;
@@ -139,8 +153,5 @@
   &__arrow {
     width: 40px;
     height: 40px;
-    margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
