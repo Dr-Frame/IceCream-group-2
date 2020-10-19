@@ -148,6 +148,7 @@
     }
     @include for-size(desktop) {
       width: 335px;
+      transform: translate(-50%, -65%);
     }
   }
   &__arrow {
