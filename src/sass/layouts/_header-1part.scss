@@ -175,7 +175,8 @@
     color: $main-color;
     @include font(14px, 18px, 700);
 
-    &:hover {
+    &:hover,
+    &:focus {
       color: $secondary-color;
     }
 

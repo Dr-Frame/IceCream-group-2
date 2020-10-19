@@ -90,7 +90,8 @@
       height: 34px;
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: $secondary-color;
     }
   }

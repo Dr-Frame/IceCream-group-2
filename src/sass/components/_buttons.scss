@@ -15,7 +15,8 @@
 
   cursor: pointer;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $btn-accent-white;
   }
 
@@ -23,7 +24,8 @@
     background-color: $secondary-color;
     color: $main-color;
 
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: $btn-accent-red;
     }
   }
