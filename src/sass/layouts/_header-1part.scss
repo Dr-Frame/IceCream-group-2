@@ -191,6 +191,10 @@
     }
   }
 
+  &__navigation-link--active {
+    color: $secondary-color;
+  }
+
   &__btn-menu {
     position: relative;
     justify-content: flex-start;
